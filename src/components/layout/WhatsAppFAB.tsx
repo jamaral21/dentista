@@ -1,0 +1,7 @@
+import type { DemoAction } from "@/types/site";
+
+export function WhatsAppFAB({ onDemoAction }: { onDemoAction: (action: DemoAction) => void }) {
+  return <a href="#contacto" onClick={(event) => { event.preventDefault(); onDemoAction("whatsapp"); }} className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 rounded-2xl px-4 py-3 transition-all duration-200" style={{ background: "#25D366", boxShadow: "0 6px 20px rgba(37,211,102,0.4)", textDecoration: "none" }} aria-label="Abrir WhatsApp para solicitar cita (botón de demostración sin número real)">
+    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.5 5.84L0 24l6.34-1.46A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.62-.5-5.14-1.36l-.37-.22-3.77.87.9-3.65-.24-.38A9.95 9.95 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.5-7.36c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.67.15-.77.97-.95 1.17-.35.22-.65.07A8.16 8.16 0 0 1 9 12.78c-.4-.69-.07-1 .28-1.34.23-.23.5-.6.75-.9.25-.3.33-.52.5-.87.17-.35.08-.65-.04-.9s-.67-1.62-.92-2.22-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.31 1.27.5 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z" fill="white"/></svg><span className="text-white text-sm font-semibold hidden sm:block" style={{ fontFamily: "Sora, sans-serif" }}>WhatsApp</span>
+  </a>;
+}

@@ -1,0 +1,4 @@
+# Local images remain ordinary Git blobs; this repository does not use Git LFS.
+*.png -text
+*.jpg -text
+*.jpeg -text
