@@ -9,7 +9,7 @@ Landing page conceptual de una clínica dental ficticia, creada por PEPE LABS a 
 - pnpm 10 (lockfile incluido)
 - Node.js 22, según `.mise.toml`
 
-Las referencias visuales entregadas se conservan en `desktop.png` y `mobile.png`.
+Las referencias visuales entregadas se conservan en `references/desktop.png` y `references/mobile.png`.
 
 ## Requisitos e instalación
 
@@ -50,7 +50,7 @@ El build se genera en `dist/`.
 - `public/images/`: fotografías locales optimizadas.
 - `docs/`: brief, arquitectura, QA, contenido y despliegue.
 - `docs/adr/`: decisiones técnicas.
- - `references/`: `desktop.png` y `mobile.png`, referencias visuales aprobadas.
+- `references/`: `desktop.png` y `mobile.png`, referencias visuales aprobadas.
 
 ## Personalización
 

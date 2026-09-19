@@ -24,9 +24,9 @@ export default function App() {
 
   return <>
     <div id="site-shell">
-      <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium" style={{ background: "#55D6A9", color: "#081D2C", fontFamily: "Sora, sans-serif" }}>Saltar al contenido principal</a>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium" style={{ background: "#55D6A9", color: "#081D2C", fontFamily: "Sora, sans-serif" }}>Saltar al contenido principal</a>
       <Header />
-      <main id="main-content"><Hero /><Clinica /><Tratamientos /><Equipo /><Experiencia /><Contacto onDemoAction={setDemoAction} /></main>
+      <main id="main-content" tabIndex={-1}><Hero /><Clinica /><Tratamientos /><Equipo /><Experiencia /><Contacto onDemoAction={setDemoAction} /></main>
       <Footer />
       <WhatsAppFAB onDemoAction={setDemoAction} />
     </div>
